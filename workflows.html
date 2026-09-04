@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ITS Wiki — Quy trình làm việc</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="brand">ITS Wiki<small>Indochina Travel Services</small></div>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="departments.html">Phòng ban</a></li>
+      <li><a href="workflows.html" class="active">Quy trình làm việc</a></li>
+      <li><a href="org-chart.html">Sơ đồ tổ chức</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h1>Quy trình làm việc</h1>
+    <p class="lede">Khung quy trình tham khảo cho các nghiệp vụ chính của một DMC (Destination Management Company). Trang này chưa có dữ liệu nội bộ thực tế — cần bạn bổ sung/chỉnh sửa từng bước theo quy trình thật của ITS Vietnam.</p>
+
+    <div class="todo">
+      <strong>⚠️ Bản nháp — chưa có nguồn nội bộ</strong>
+      Chưa có tài liệu quy trình nội bộ nào được cung cấp. Nội dung dưới đây là khung tham khảo dựa trên nghiệp vụ điển hình của Reservation / Sales / Ticketing / Accounting tại một công ty lữ hành B2B. Vui lòng thay bằng quy trình thực tế (kèm SLA, người phụ trách, công cụ sử dụng).
+    </div>
+
+    <h2>1. Quy trình xử lý booking (Reservation)</h2>
+    <ol>
+      <li>Nhận yêu cầu booking từ agent (email / API / hệ thống đặt tour).</li>
+      <li>Reservation kiểm tra khả dụng dịch vụ (khách sạn, tour, transfer, guide).</li>
+      <li>Xác nhận giá &amp; điều kiện với Sales/Product.</li>
+      <li>Gửi báo giá / xác nhận (confirmation) cho agent.</li>
+      <li>Chuyển thông tin cho bộ phận Điều hành (Operations) để sắp xếp dịch vụ thực tế.</li>
+      <li>Theo dõi, xử lý phát sinh trong chuyến đi (hotline 24/7).</li>
+      <li>Đóng booking, chuyển hồ sơ cho Accounting để đối soát công nợ.</li>
+    </ol>
+
+    <h2>2. Quy trình vé máy bay (Ticketing)</h2>
+    <ol>
+      <li>Nhận yêu cầu xuất vé / đổi vé / hoàn vé.</li>
+      <li>Kiểm tra chỗ, giá vé qua hệ thống đặt chỗ (GDS) hoặc trực tiếp hãng bay.</li>
+      <li>Xác nhận với khách hàng/agent trước khi xuất vé.</li>
+      <li>Xuất vé, gửi e-ticket.</li>
+      <li>Cập nhật thông tin thanh toán cho Accounting.</li>
+    </ol>
+
+    <h2>3. Quy trình bán hàng (Sales)</h2>
+    <ol>
+      <li>Tiếp nhận yêu cầu từ agent/đối tác quốc tế.</li>
+      <li>Xây dựng chương trình tour phù hợp (tailor-made / group / MICE).</li>
+      <li>Gửi báo giá, đàm phán điều khoản hợp tác.</li>
+      <li>Chuyển booking đã chốt cho Reservation xử lý.</li>
+      <li>Theo dõi chăm sóc khách hàng sau bán.</li>
+    </ol>
+
+    <h2>4. Quy trình kế toán / công nợ (Accounting)</h2>
+    <ol>
+      <li>Đối soát booking đã hoàn tất dịch vụ với Reservation.</li>
+      <li>Xuất hoá đơn, gửi công nợ cho agent.</li>
+      <li>Theo dõi thanh toán, nhắc nợ quá hạn.</li>
+      <li>Đối soát chi phí với nhà cung cấp (khách sạn, vận chuyển, hướng dẫn viên).</li>
+      <li>Báo cáo tài chính định kỳ cho Ban giám đốc.</li>
+    </ol>
+
+    <h2>5. Quy trình xử lý sự cố / hỗ trợ khẩn cấp (24/7 hotline)</h2>
+    <ol>
+      <li>Tiếp nhận yêu cầu hỗ trợ khẩn qua hotline dùng chung (xem trang <a href="departments.html">Phòng ban</a>).</li>
+      <li>Xác định mức độ ưu tiên và bộ phận phụ trách (Điều hành / Reservation / Ticketing).</li>
+      <li>Xử lý trực tiếp hoặc leo thang (escalate) lên Trưởng phòng/Ban giám đốc nếu cần.</li>
+      <li>Ghi nhận lại sự cố và cách xử lý để rút kinh nghiệm.</li>
+    </ol>
+
+    <footer class="page-footer">Trang này là khung tham khảo — chưa dựa trên tài liệu quy trình nội bộ thực tế của ITS Vietnam.</footer>
+  </main>
+</div>
+</body>
+</html>
