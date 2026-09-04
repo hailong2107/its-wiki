@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ITS Wiki — AI Smart Quotation</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="brand-block">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="3" fill="#f58220"/>
+          <g stroke="#f58220" stroke-width="1.6" stroke-linecap="round">
+            <line x1="12" y1="2" x2="12" y2="6"/>
+            <line x1="12" y1="18" x2="12" y2="22"/>
+            <line x1="2" y1="12" x2="6" y2="12"/>
+            <line x1="18" y1="12" x2="22" y2="12"/>
+            <line x1="4.9" y1="4.9" x2="7.8" y2="7.8"/>
+            <line x1="16.2" y1="16.2" x2="19.1" y2="19.1"/>
+            <line x1="4.9" y1="19.1" x2="7.8" y2="16.2"/>
+            <line x1="16.2" y1="7.8" x2="19.1" y2="4.9"/>
+          </g>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="name">ITS Wiki</div>
+        <div class="tagline">Indochina Travel Services</div>
+      </div>
+    </div>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="departments.html">Phòng ban</a></li>
+      <li><a href="workflows.html">Quy trình làm việc</a></li>
+      <li><a href="org-chart.html">Sơ đồ tổ chức</a></li>
+      <li><a href="ai-smart-quotation.html" class="active">AI Smart Quotation</a></li>
+    </ul>
+    <div class="sidebar-footer">Nguồn: <a href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com</a></div>
+  </nav>
+  <main>
+    <h1>AI Smart Quotation</h1>
+    <p class="lede">Công cụ nội bộ giúp đội Sales/Reservation của ITS tạo và cập nhật báo giá tour nhanh hơn, ít sai sót hơn — trò chuyện bằng tiếng Việt/Anh với Claude thay vì tự sửa Excel bằng tay.</p>
+
+    <div class="todo">
+      <strong>ℹ️ Ghi chú</strong>
+      Trang này mô tả tổng quan chức năng cho người dùng nội bộ. Các chi tiết kỹ thuật/hạ tầng (kết nối máy chủ, cấu hình bảo mật...) không được liệt kê ở đây — liên hệ đội phụ trách hệ thống nếu cần.
+    </div>
+
+    <h2>Vấn đề công cụ này giải quyết</h2>
+    <p>Trước đây, mỗi khi khách đổi yêu cầu (ví dụ tăng từ 14 lên 16 khách), nhân viên phải tự mở file Excel, sửa số liệu, tính lại giá, xuất PDF gửi khách — mất 15–30 phút và dễ nhầm lẫn. AI Smart Quotation làm việc này chỉ trong vài giây: hệ thống tự đọc file, tính lại đúng công thức giá, xuất Excel và PDF báo giá mới.</p>
+
+    <h2>Cách dùng hàng ngày</h2>
+    <p>Nhân viên Sales chat trực tiếp với Claude bằng câu nói tự nhiên (không cần học lệnh, không cần mở terminal) — ví dụ:</p>
+    <div class="grid">
+      <div class="card">"Đổi pax tour này thành 16 người"</div>
+      <div class="card">"Nâng cấp khách sạn ở Đà Lạt lên 1 hạng"</div>
+      <div class="card">"Hôm nay có hồ sơ nào đang bị tắc không?"</div>
+      <div class="card">"Tour G2Gxx0227GROUP1 khách đã trả lời chưa?"</div>
+    </div>
+
+    <h2>Những gì hệ thống hỗ trợ</h2>
+    <table>
+      <tr><th>Chức năng</th><th>Mô tả ngắn gọn</th></tr>
+      <tr><td>Tính giá &amp; xuất báo giá</td><td>Tự tính lại giá tour đoàn, xuất file Excel + PDF theo đúng mẫu ITS chỉ từ một câu yêu cầu.</td></tr>
+      <tr><td>Lưu lịch sử phiên bản</td><td>Mọi lần chỉnh sửa báo giá đều được lưu lại — xem lại, so sánh, hoặc quay về bản cũ bất cứ lúc nào.</td></tr>
+      <tr><td>Quy trình duyệt</td><td>Sales tạo báo giá → cấp trên (senior/manager) duyệt trước khi đánh dấu đã gửi khách.</td></tr>
+      <tr><td>Dữ liệu dùng chung cả team</td><td>Quản lý có thể xem báo giá của cả team từ máy mình, không cần hỏi từng người.</td></tr>
+      <tr><td>Theo dõi hồ sơ xuyên suốt</td><td>Mỗi hồ sơ được theo dõi từ lúc nhận yêu cầu đến khi hoàn tất (báo giá → duyệt → đặt dịch vụ → kế toán → thanh toán) — luôn biết đang ở bước nào, ai đang giữ, có quá hạn không.</td></tr>
+      <tr><td>Nhiều mẫu tính giá (đa phân hệ)</td><td>Áp dụng đúng bảng giá thật của từng mảng dịch vụ (tour trọn gói, golf, dịch vụ lẻ...) thay vì một công thức chung, giúp báo giá chính xác và nhất quán hơn.</td></tr>
+      <tr><td>Gợi ý tham khảo khi lên báo giá mới</td><td>Tự động gợi ý tour tương tự đã từng bán, kiểm tra xem hợp đồng/giá với nhà cung cấp có sẵn sàng cho ngày khách đi hay chưa.</td></tr>
+      <tr><td>Báo cáo &amp; KPI cho quản lý</td><td>Xem nhanh số báo giá đã tạo, tỷ lệ duyệt/gửi, margin trung bình, hiệu suất từng nhân viên — hỏi trực tiếp qua Claude, không cần mở báo cáo riêng.</td></tr>
+      <tr><td>Theo dõi email khách</td><td>Biết khách đã trả lời báo giá chưa, có email nào chưa xử lý, có quá hạn cần nhắc không — chỉ đọc, không tự gửi thay ai.</td></tr>
+      <tr><td>Kết nối CRM &amp; các kênh liên lạc</td><td>Tra cứu/khách hàng, liên hệ qua email hoặc chat (Google Chat, Telegram, Zalo...) ngay trong cùng một nơi trò chuyện với Claude.</td></tr>
+      <tr><td>Giao việc nội bộ</td><td>Giao và theo dõi công việc giữa các phòng ban ngay trong Claude, không cần công cụ quản lý việc riêng.</td></tr>
+    </table>
+
+    <h2>Nguyên tắc an toàn</h2>
+    <ul>
+      <li>Mọi hành động "gửi thật" (email, tin nhắn, cập nhật CRM) đều cần <strong>xác nhận rõ ràng</strong> trước khi thực hiện — hệ thống không tự ý gửi thay ai.</li>
+      <li>Tra cứu dữ liệu tour/nhà cung cấp từ hệ thống cũ chỉ ở chế độ <strong>xem, không chỉnh sửa</strong>.</li>
+      <li>Mọi thao tác quan trọng đều được ghi lại để có thể xem lại sau này.</li>
+    </ul>
+
+    <h2>Muốn dùng thử?</h2>
+    <p>Liên hệ quản lý/admin phụ trách để được cấp quyền truy cập và hướng dẫn cài đặt ban đầu (chỉ mất khoảng 5 phút, làm 1 lần).</p>
+
+    <footer class="page-footer">Nguồn: tài liệu nội bộ dự án AI Smart Quotation (đã lược bỏ chi tiết kỹ thuật/hạ tầng nhạy cảm cho trang public).</footer>
+  </main>
+</div>
+</body>
+</html>
