@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ITS Wiki — Đào tạo nhân viên mới</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+  .check { list-style: none; padding-left: 0; }
+  .check li { padding-left: 28px; position: relative; margin-bottom: 6px; }
+  .check li::before { content: "☐"; position: absolute; left: 0; color: var(--brand-dark); }
+  code { background: var(--brand-soft); padding: 1px 6px; border-radius: 5px; font-size: 0.88em; }
+  .scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+<div class="layout">
+  <nav class="sidebar">
+    <div class="brand-block">
+      <div class="brand-mark">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="12" cy="12" r="3" fill="#f58220"/>
+          <g stroke="#f58220" stroke-width="1.6" stroke-linecap="round">
+            <line x1="12" y1="2" x2="12" y2="6"/>
+            <line x1="12" y1="18" x2="12" y2="22"/>
+            <line x1="2" y1="12" x2="6" y2="12"/>
+            <line x1="18" y1="12" x2="22" y2="12"/>
+            <line x1="4.9" y1="4.9" x2="7.8" y2="7.8"/>
+            <line x1="16.2" y1="16.2" x2="19.1" y2="19.1"/>
+            <line x1="4.9" y1="19.1" x2="7.8" y2="16.2"/>
+            <line x1="16.2" y1="7.8" x2="19.1" y2="4.9"/>
+          </g>
+        </svg>
+      </div>
+      <div class="brand-text">
+        <div class="name">ITS Wiki</div>
+        <div class="tagline">Indochina Travel Services</div>
+      </div>
+    </div>
+    <ul>
+      <li><a href="index.html">Trang chủ</a></li>
+      <li><a href="departments.html">Phòng ban</a></li>
+      <li><a href="workflows.html">Quy trình làm việc</a></li>
+      <li><a href="org-chart.html">Sơ đồ tổ chức</a></li>
+      <li><a href="ai-its-os.html">AI ITS OS</a></li>
+      <li><a href="onboarding.html" class="active">Đào tạo nhân viên mới</a></li>
+    </ul>
+    <div class="sidebar-footer">Nguồn: <a href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com</a></div>
+  </nav>
+  <main>
+    <h1>Đào tạo nhân viên mới — Điều hành &amp; Sales</h1>
+    <p class="lede">Tài liệu làm quen cho nhân viên mới khối Sales và Điều hành (OP). Cập nhật theo bản ngày 15/10/2026.</p>
+
+    <div class="todo">
+      <strong>ℹ️ Phiên bản public</strong>
+      Trang này được rút gọn từ tài liệu đào tạo nội bộ: đã lược tên agent/khách cụ thể trong ví dụ và các số liệu nhạy cảm (số dư voucher/top-up, giá vốn, margin). Bản đầy đủ do quản lý/trưởng nhóm cung cấp.
+    </div>
+
+    <h2>1. ITS Vietnam là ai</h2>
+    <p>ITS Vietnam (Indochina Travel Services) là một DMC B2B: không bán trực tiếp cho khách lẻ mà thiết kế và vận hành tour inbound cho các hãng lữ hành nước ngoài (agent/đối tác). Khách của ITS là agent; khách du lịch là khách của agent.</p>
+    <table>
+      <tr><th>Hạng mục</th><th>Nội dung</th></tr>
+      <tr><td>Điểm đến</td><td>Việt Nam, Lào, Campuchia, Myanmar</td></tr>
+      <tr><td>Văn phòng</td><td>Hà Nội, Đà Nẵng, TP. Hồ Chí Minh</td></tr>
+      <tr><td>Phân khúc chính</td><td>Luxury/high-end, MICE, FIT/tour thiết kế riêng, golf</td></tr>
+      <tr><td>Dịch vụ bổ trợ</td><td>Khách transit quốc tế tại Nội Bài và Tân Sơn Nhất (Vietnam Airlines)</td></tr>
+      <tr><td>Triết lý sản phẩm</td><td>Giữ bản sắc văn hoá Việt thật, không thương mại hoá trải nghiệm</td></tr>
+      <tr><td>Nguyên tắc vận hành</td><td>Mô hình Lean; TMS là nguồn dữ liệu duy nhất cho sales, điều hành và tính thưởng. <a href="ai-its-os.html">AI ITS OS</a> là công cụ AI để quản trị &amp; vận hành.</td></tr>
+    </table>
+    <p><strong>Các phòng ban làm việc cùng:</strong> Ban Giám đốc (duyệt báo giá, chính sách), Sales (tiếp nhận yêu cầu, báo giá, chăm sóc agent), Điều hành/OP (đặt dịch vụ, hướng dẫn viên, xử lý tour đang chạy), Kế toán (thu tiền agent, thanh toán supplier, hoá đơn), Contracting (hợp đồng và giá năm với supplier).</p>
+    <p>Một đoàn đi qua ít nhất 3 phòng: <strong>Sales bán → OP vận hành → Kế toán quyết toán</strong>. Sales và OP phải hiểu việc của nhau để bàn giao không sót.</p>
+
+    <h2>2. Nguyên tắc cơ bản cần biết</h2>
+    <h3>2.1 Giao dịch</h3>
+    <ul>
+      <li>Gmail/Outlook là phần mềm email chính thức — chỉ dùng email công ty khi giao dịch.</li>
+      <li>Google Chat là hệ thống chat chính thức.</li>
+      <li>Điện thoại dùng số công ty; dùng số điện thoại/WhatsApp/Viber chung của công ty.</li>
+    </ul>
+    <h3>2.2 Thuật ngữ</h3>
+    <div class="scroll">
+    <table>
+      <tr><th>Thuật ngữ</th><th>Nghĩa</th><th>Ví dụ ở ITS</th></tr>
+      <tr><td>DMC</td><td>Destination Management Company — công ty vận hành tour tại điểm đến</td><td>ITS làm DMC cho agent châu Âu, Thái</td></tr>
+      <tr><td>Agent / đối tác</td><td>Hãng lữ hành nước ngoài gửi khách</td><td>Mỗi agent có mã 3 chữ trong TMS</td></tr>
+      <tr><td>Supplier</td><td>Nhà cung cấp dịch vụ</td><td>Khách sạn, sân golf, du thuyền, xe, nhà hàng</td></tr>
+      <tr><td>FIT</td><td>Khách lẻ/nhóm nhỏ, lịch trình riêng</td><td>2–6 khách, tour thiết kế theo yêu cầu</td></tr>
+      <tr><td>GIT / Series</td><td>Đoàn lớn; series = nhiều đoàn cùng chương trình khởi hành định kỳ</td><td>Các đoàn hàng tuần 40–130 khách</td></tr>
+      <tr><td>MICE</td><td>Meeting, Incentive, Conference, Event</td><td>Gala dinner, hội nghị, đoàn thưởng</td></tr>
+      <tr><td>Enquiry</td><td>Yêu cầu báo giá từ agent</td><td>Email hỏi giá tour 10 ngày cho 4 khách</td></tr>
+      <tr><td>Quotation / Version</td><td>Báo giá; mỗi lần sửa là một version mới</td><td>V1 → V2 khi đổi khách sạn</td></tr>
+      <tr><td>Pax</td><td>Số khách</td><td>4 pax = 4 khách</td></tr>
+      <tr><td>SGL / DBL / TWN / TPL</td><td>Phòng đơn / 1 giường đôi / 2 giường / 3 người</td><td>1 TWN or DBL</td></tr>
+      <tr><td>Single supplement</td><td>Phụ thu phòng đơn</td><td>Khách ở một mình</td></tr>
+      <tr><td>ROH</td><td>Run of house — hạng phòng do khách sạn xếp</td><td>Voucher 1 đêm ROH</td></tr>
+      <tr><td>Contract rate / Net rate</td><td>Giá hợp đồng/giá vốn ITS trả supplier</td><td><strong>Không bao giờ gửi cho agent</strong></td></tr>
+      <tr><td>Markup / Margin</td><td>Phần cộng thêm / lợi nhuận gộp</td><td>Giá bán = giá vốn + markup</td></tr>
+      <tr><td>Allotment / Release</td><td>Phòng giữ sẵn / hạn trả phòng</td><td>Release 21 ngày trước đến</td></tr>
+      <tr><td>Cancellation policy</td><td>Điều kiện huỷ và phí</td><td>Huỷ trong 7 ngày mất 100%</td></tr>
+      <tr><td>Voucher / Top-up / Barter</td><td>Số dư ITS còn tại supplier (do huỷ, đổi chương trình, trao đổi)</td><td>Số dư là thông tin nội bộ</td></tr>
+      <tr><td>Tee time / Green fee / Caddie / Buggy</td><td>Giờ phát bóng / phí sân / phí caddie / xe điện</td><td>Tee time 8:00, buggy share</td></tr>
+      <tr><td>Play &amp; Stay</td><td>Gói golf kèm phòng nghỉ</td><td>Gói golf + resort</td></tr>
+      <tr><td>Transit</td><td>Khách nối chuyến quốc tế qua Việt Nam</td><td>VNA intl–intl tại Nội Bài</td></tr>
+      <tr><td>PNR</td><td>Mã đặt chỗ vé máy bay</td><td>Mã 6 ký tự</td></tr>
+      <tr><td>FOC</td><td>Free of charge — suất miễn phí cho trưởng đoàn</td><td>15+1 FOC</td></tr>
+    </table>
+    </div>
+
+    <h2>3. Quy trình một đoàn từ enquiry đến quyết toán</h2>
+    <p>Một đoàn đi qua Sales trước, chỉ chuyển sang Điều hành khi agent đồng ý và tour đã <em>confirmed</em> trong TMS. Mỗi lần agent yêu cầu sửa, Sales lưu thành <strong>version báo giá mới</strong> thay vì ghi đè. Mỗi hồ sơ được theo dõi theo stage trong ITS Workflow; hồ sơ quá SLA sẽ hiện trong danh sách cần chú ý của người phụ trách.</p>
+
+    <h3>SLA theo từng stage</h3>
+    <p>SLA là số giờ tối đa một hồ sơ được nằm ở mỗi stage. KPI: gửi báo giá trong <strong>4 giờ</strong> kể từ lúc nhận request, nên ba stage đầu (tiếp nhận, báo giá, duyệt) cộng lại không quá 4 giờ.</p>
+    <div class="scroll">
+    <table>
+      <tr><th>Stage</th><th>Việc cần xong</th><th>Phụ trách</th><th>SLA áp dụng</th><th>Mặc định cũ</th></tr>
+      <tr><td>Sales</td><td>Tiếp nhận enquiry, hỏi đủ thông tin</td><td>Sales</td><td>1 giờ</td><td>12 giờ</td></tr>
+      <tr><td>Quotation</td><td>Làm xong báo giá, trình duyệt</td><td>Sales</td><td>2 giờ</td><td>12 giờ</td></tr>
+      <tr><td>Manager</td><td>Duyệt và gửi báo giá</td><td>Quản lý / Ban GĐ</td><td>1 giờ</td><td>24 giờ</td></tr>
+      <tr><td>Reservation</td><td>Đặt dịch vụ, nhận xác nhận supplier</td><td>Điều hành</td><td>48 giờ</td><td>48 giờ</td></tr>
+      <tr><td>Accounting</td><td>Xuất invoice, đối soát</td><td>Kế toán</td><td>48 giờ</td><td>48 giờ</td></tr>
+      <tr><td>Payment</td><td>Thu tiền / thanh toán supplier</td><td>Kế toán</td><td>72 giờ</td><td>72 giờ</td></tr>
+    </table>
+    </div>
+    <p><em>Cách chia 1 + 2 + 1 giờ là đề xuất, chờ Ban Giám đốc chốt.</em> Các KPI liên quan: Quotation Response Time ≤ 4 giờ (xuất sắc ≤ 2 giờ); OP Response Time ≥ 95% đúng SLA; Report Timeliness ≥ 98% đúng hạn; Payment Processing ≥ 98% đúng hạn.</p>
+
+    <h2>4. Hệ thống và công cụ</h2>
+    <p>Mọi đoàn phải có trong TMS; cái gì không có trong TMS thì coi như chưa tồn tại — kể cả khi tính KPI và thưởng.</p>
+    <table>
+      <tr><th>Hệ thống</th><th>Dùng để làm gì</th><th>Ai dùng chính</th></tr>
+      <tr><td>TMS</td><td>Tour, dịch vụ từng ngày, supplier, giá hợp đồng, voucher/top-up, booking, invoice</td><td>Sales, OP, Kế toán</td></tr>
+      <tr><td>ITS Quotation</td><td>Tính giá, quản lý version báo giá, trình duyệt</td><td>Sales</td></tr>
+      <tr><td>ITS Workflow</td><td>Theo dõi hồ sơ từng stage, cảnh báo quá SLA, lịch sử trao đổi</td><td>Sales, OP, quản lý</td></tr>
+      <tr><td>ITS Management</td><td>Tài khoản nhân viên, giao task giữa phòng ban, KPI/OKR</td><td>Tất cả</td></tr>
+      <tr><td>Gmail phòng ban</td><td>Email agent và supplier (hanoi@, saigon@, production2@, production6@, info@…)</td><td>Sales, OP</td></tr>
+      <tr><td>Claude (AI ITS OS)</td><td>Tra cứu TMS, soạn email, kiểm tra voucher, báo cáo nhanh</td><td>Tất cả</td></tr>
+    </table>
+
+    <h3>Quy tắc đặt tên đoàn (Group name) trong TMS — bắt buộc</h3>
+    <p><code>[Mã agent 3 chữ][DDMMYY][Tên khách/mã đoàn]</code></p>
+    <ul>
+      <li>DDMMYY là <strong>ngày khách ĐẾN Việt Nam</strong>, không phải ngày bay từ nước họ.</li>
+      <li>Tour copy từ tour cũ phải đổi tên ngay (không để “COPY FROM…”).</li>
+      <li>Trước khi tạo tour request mới, xác nhận tên đoàn với trưởng nhóm.</li>
+    </ul>
+    <p><strong>Mẹo tra cứu TMS:</strong> thường không nhớ mã tour nội bộ (dạng T26…). Hãy tìm theo tên đoàn, mã agent, ngày đến hoặc tên khách. Tên supplier trong TMS có thể khác tên gọi thường ngày, nên thử nhiều từ khoá.</p>
+    <p><strong>Lỗi dữ liệu hay gặp:</strong> sai ngày khởi hành, tour copy chưa đổi tên, thiếu địa điểm lịch trình, số ngày tour không khớp giá, trạng thái tour không cập nhật khi agent huỷ.</p>
+
+    <h2>5. Module Sales</h2>
+    <p>Việc của Sales là biến enquiry thành đoàn với giá đúng, margin đúng và hồ sơ đủ để OP vận hành; đảm bảo liên hệ với hãng và khách trước, trong và sau quá trình khách đi tham quan.</p>
+    <h3>5.1 Tiếp nhận enquiry — cần hỏi đủ 8 thông tin</h3>
+    <ul class="check">
+      <li>Agent nào, người liên hệ nào</li>
+      <li>Ngày đến/đi Việt Nam, chuyến bay (nếu có)</li>
+      <li>Số khách: người lớn, trẻ em (tuổi), golfer/non-golfer</li>
+      <li>Cơ cấu phòng: SGL/DBL/TWN/TPL</li>
+      <li>Hạng khách sạn mong muốn</li>
+      <li>Điểm đến và số đêm mỗi nơi</li>
+      <li>Bữa ăn, hướng dẫn viên (ngôn ngữ), xe</li>
+      <li>Ngân sách, yêu cầu đặc biệt (ăn kiêng, dịp kỷ niệm, xe lăn)</li>
+    </ul>
+    <h3>5.2 Làm báo giá</h3>
+    <ol>
+      <li>Bắt đầu từ lịch trình mẫu trong Product Catalogue hoặc tour tương tự đã làm trong TMS.</li>
+      <li>Kiểm tra hợp đồng supplier còn hiệu lực và đã có giá cho mùa/năm của ngày đi.</li>
+      <li>Thiếu giá năm mới: gửi email xin giá supplier; tham khảo Booking.com theo ngày cụ thể (chỉ để ước lượng).</li>
+      <li>Ưu tiên supplier High Favorite (còn voucher/top-up), rồi Normal Favorite (danh sách prefer).</li>
+      <li>Tính giá, áp markup theo chính sách, lưu version trong hệ thống báo giá.</li>
+      <li>Trình duyệt; chỉ gửi agent sau khi được duyệt, rồi đánh dấu “đã gửi”.</li>
+    </ol>
+    <h3>5.3 Lỗi báo giá hay gặp nhất</h3>
+    <table>
+      <tr><th>Lỗi</th><th>Hậu quả</th><th>Cách tránh</th></tr>
+      <tr><td>Nhầm giá theo phòng và giá theo người (phòng TWN chia 2)</td><td>Giá lệch gấp đôi, agent so với đối thủ</td><td>Ghi rõ “per room/night” hay “per person” trong mọi dòng giá</td></tr>
+      <tr><td>Dùng giá hợp đồng đã hết hạn</td><td>Lỗ khi supplier tăng giá</td><td>Kiểm tra hạn hợp đồng trước khi báo</td></tr>
+      <tr><td>Quên phụ thu (Tết, Giáng sinh, bữa ăn bắt buộc, peak tee time)</td><td>Mất margin</td><td>Đọc remark supplier trong TMS</td></tr>
+      <tr><td>Lộ giá vốn/margin trong file gửi agent</td><td>Mất uy tín, mất đơn</td><td>Chỉ gửi file báo giá khách, xuất từ mẫu chuẩn</td></tr>
+      <tr><td>Hai người cùng xử lý một enquiry</td><td>Báo hai giá khác nhau</td><td>Kiểm tra hồ sơ trong Workflow trước khi nhận</td></tr>
+    </table>
+    <h3>5.4 Email cho agent</h3>
+    <ul>
+      <li>Viết bằng tiếng Anh, ngắn, có tiêu đề chứa tên đoàn (ví dụ “[Tên đoàn] – Quotation V2”).</li>
+      <li>Mỗi email trả lời đủ mọi câu hỏi của agent; chưa có câu trả lời thì nói rõ khi nào có.</li>
+      <li>Trả lời enquiry trong SLA của công ty; ghi lại trao đổi vào hồ sơ.</li>
+      <li>Khi đoàn confirmed: cập nhật trạng thái TMS, gửi proforma invoice, bàn giao OP đầy đủ (danh sách khách, chuyến bay, yêu cầu đặc biệt).</li>
+    </ul>
+
+    <h2>6. Module Điều hành (OP)</h2>
+    <p>Việc của OP là đảm bảo mọi dịch vụ đã bán được đặt, xác nhận bằng văn bản và diễn ra đúng giờ, đúng chuẩn; đảm bảo liên hệ với khách và nhà cung cấp để điều phối trong quá trình khách đi tham quan.</p>
+    <h3>6.1 Sau khi nhận bàn giao từ Sales</h3>
+    <ol>
+      <li>Đối chiếu dịch vụ trong TMS với báo giá đã duyệt (ngày, số phòng, hạng phòng, pax).</li>
+      <li>Đặt từng dịch vụ với supplier; ghi remark đầy đủ (chuyến bay, giờ đón, tên HDV, yêu cầu đặc biệt).</li>
+      <li>Theo dõi các dịch vụ “New Booking” chưa được supplier xác nhận; nhắc lại sau 24–48 giờ.</li>
+      <li>Cập nhật trạng thái dịch vụ khi nhận xác nhận; lưu email xác nhận.</li>
+      <li>Trước ngày đến 3–5 ngày: gửi rooming list, chương trình chi tiết cho HDV và lái xe, kiểm tra lại toàn bộ.</li>
+      <li>Trong tour: trực điện thoại, xử lý phát sinh, ghi nhận chi phí phát sinh.</li>
+      <li>Sau tour: thu phản hồi, chuyển chứng từ cho Kế toán.</li>
+    </ol>
+    <h3>6.2 Voucher / top-up tại supplier</h3>
+    <p>ITS có số dư tại nhiều supplier do khách huỷ hoặc đổi chương trình. Supplier còn số dư được xếp <strong>High Favorite</strong> trong TMS và phải ưu tiên dùng trước khi hết hạn.</p>
+    <ul>
+      <li>Trước khi đặt: xem số dư, hạn dùng và note code trong chi tiết supplier trên TMS.</li>
+      <li>Khi đặt: ghi rõ trong email “trừ vào top-up/voucher, note code …” và xác nhận lại số dư với supplier.</li>
+      <li>Sau khi dùng: báo trưởng nhóm cập nhật số dư mới trong TMS.</li>
+      <li>Số dư là thông tin nội bộ, không ghi vào remark hiển thị cho agent.</li>
+    </ul>
+    <h3>6.3 Golf</h3>
+    <ul>
+      <li>Ghi số golfer và non-golfer, handicap nếu sân yêu cầu, tee time, buggy/caddie.</li>
+      <li>Peak tee time có thể bị phụ thu; cuối tuần cần đặt sớm.</li>
+      <li>Khách đánh cùng member: member tự đặt, ITS chỉ đặt phần khách của mình.</li>
+    </ul>
+    <h3>6.4 Khách transit (Nội Bài, Tân Sơn Nhất)</h3>
+    <ul>
+      <li>Nguồn đối chiếu chính: bảng báo khách của Vietnam Airlines và email phòng ban (Hà Nội: production2@, hanoi@; Sài Gòn: production6@, saigon@), sau đó mới đến TMS.</li>
+      <li>Lounge chỉ cần cho khách Premium Economy và Economy; khách Business đã có phòng chờ Bông Sen.</li>
+      <li>Mọi khiếu nại phải ghi lại kèm PNR và báo trưởng nhóm ngay trong ngày.</li>
+    </ul>
+    <h3>6.5 Xử lý sự cố</h3>
+    <table>
+      <tr><th>Tình huống</th><th>Xử lý ngay</th><th>Báo ai</th></tr>
+      <tr><td>Chuyến bay đổi giờ/huỷ</td><td>Đổi xe đón, HDV, báo khách sạn</td><td>Sales phụ trách + agent</td></tr>
+      <tr><td>Khách sạn overbook</td><td>Yêu cầu khách sạn chuyển khách sang nơi tương đương hoặc cao hơn, không phụ thu</td><td>Trưởng nhóm OP</td></tr>
+      <tr><td>Khách ốm/tai nạn</td><td>Đưa đến bệnh viện quốc tế gần nhất, giữ hóa đơn</td><td>Ban Giám đốc + agent ngay</td></tr>
+      <tr><td>Khách khiếu nại dịch vụ</td><td>Ghi nhận, xin lỗi, xử lý tại chỗ nếu được</td><td>Sales phụ trách trong ngày</td></tr>
+    </table>
+
+    <h2>7. Văn hoá làm việc và bảo mật</h2>
+    <p>Năm quy tắc áp dụng cho mọi nhân viên ngay từ ngày đầu:</p>
+    <ol>
+      <li><strong>TMS trước, email sau.</strong> Thông tin đoàn chỉ được coi là chính thức khi đã có trong TMS.</li>
+      <li><strong>Không lộ giá vốn.</strong> Giá hợp đồng, margin, số dư voucher/top-up không bao giờ xuất hiện trong tài liệu, email hay remark mà agent thấy được.</li>
+      <li><strong>Hành động có hậu quả thật phải được duyệt.</strong> Gửi báo giá, huỷ dịch vụ, xoá dữ liệu TMS, cam kết giảm giá — hỏi trưởng nhóm trước.</li>
+      <li><strong>Thấy lỗi dữ liệu thì báo, không tự sửa im lặng.</strong> Tour trùng, ngày sai, tài khoản trùng — ghi lại và báo người phụ trách.</li>
+      <li><strong>Tài liệu gửi agent đúng nhận diện ITS.</strong> Dùng mẫu chuẩn có logo, màu và font của công ty.</li>
+    </ol>
+    <p><strong>Về sản phẩm:</strong> ITS bán trải nghiệm Việt Nam thật. Khi đề xuất hoạt động, ưu tiên cộng đồng địa phương, ẩm thực và văn hoá gốc hơn các điểm đã bị thương mại hoá.</p>
+    <p><strong>Ngôn ngữ:</strong> tiếng Việt cho nội bộ và TMS; tiếng Anh cho agent và tài liệu gửi khách.</p>
+
+    <h2>8. Lộ trình đào tạo</h2>
+    <p>Sau 1 tuần, nhân viên mới phải tự xử lý được một đoàn FIT đơn giản từ enquiry đến kết thúc, có người kèm kiểm tra.</p>
+    <div class="scroll">
+    <table>
+      <tr><th>Mức yêu cầu</th><th>Sales</th><th>Điều hành</th><th>Kết quả cần đạt</th></tr>
+      <tr><td>1 – Nền tảng</td><td>Đọc phần 1–4, 7; học Product Catalogue; tra 10 tour cũ trên TMS</td><td>Đọc phần 1–4, 7; học danh sách supplier chính mỗi miền; tra 10 tour cũ</td><td>Thuộc thuật ngữ, tự tra cứu được tour và supplier</td></tr>
+      <tr><td>2 – Quan sát</td><td>Ngồi cạnh sales cũ, đọc email agent thật, làm thử 3 báo giá nháp</td><td>Ngồi cạnh OP cũ, theo dõi 2 đoàn đang chạy, đọc email xác nhận supplier</td><td>Giải thích được từng bước quy trình ở phần 3</td></tr>
+      <tr><td>3 – Làm có kèm</td><td>Tự báo giá 2 enquiry FIT, người kèm duyệt trước khi gửi</td><td>Tự đặt dịch vụ cho 1 đoàn FIT, kể cả 1 dịch vụ trừ voucher</td><td>Báo giá/booking không có lỗi nghiêm trọng</td></tr>
+      <tr><td>4 – Độc lập</td><td>Nhận enquiry riêng, bàn giao OP đầy đủ</td><td>Trực 1 đoàn trong tour, xử lý 1 phát sinh</td><td>Đạt bài đánh giá bên dưới</td></tr>
+    </table>
+    </div>
+    <h3>Checklist đánh giá cuối tuần (trưởng nhóm tích)</h3>
+    <ul class="check">
+      <li>Giải thích đúng 20 thuật ngữ ở phần 2</li>
+      <li>Đặt tên đoàn đúng quy tắc cho 3 ví dụ bất kỳ</li>
+      <li>Tìm được một tour trên TMS khi chỉ biết tên khách và tháng đến</li>
+      <li>Kiểm tra được số dư voucher/top-up của một supplier</li>
+      <li>(Sales) Làm một báo giá đúng giá per person / per room, không lộ giá vốn</li>
+      <li>(Sales) Viết một email tiếng Anh trả lời agent đầy đủ</li>
+      <li>(OP) Đặt và nhận xác nhận đủ dịch vụ cho một đoàn</li>
+      <li>(OP) Xử lý đúng một tình huống sự cố giả định ở phần 6.5</li>
+    </ul>
+
+    <footer class="page-footer">Nguồn: Tài liệu đào tạo nhân viên mới ITS Vietnam – Điều hành &amp; Sales (cập nhật 15/10/2026), đã lược thông tin nhạy cảm cho bản public.</footer>
+  </main>
+</div>
+</body>
+</html>
