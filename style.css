@@ -312,11 +312,50 @@ footer.page-footer {
 /* ---------- Responsive ---------- */
 
 @media (max-width: 760px) {
-  .header .container { flex-direction: column; align-items: flex-start; padding-top: 14px; padding-bottom: 14px; gap: 10px; }
-  .header .logo img { height: 72px; }
-  .header-right { align-items: flex-start; width: 100%; }
-  .header-top { justify-content: flex-start; }
-  .main-nav { justify-content: flex-start; gap: 4px 16px; }
-  .hero { padding: 40px 0 36px; }
-  .hero h1 { font-size: 26px; }
+  body { font-size: 15px; line-height: 1.7; }
+
+  /* compact header: logo + site link on one row, menu scrolls sideways */
+  .header .container { display: block; min-height: 0; padding-top: 10px; padding-bottom: 0; }
+  .header .logo img { height: 56px; }
+  .header-right { width: 100%; min-width: 0; gap: 0; align-items: stretch; }
+  .header-top {
+    position: absolute; top: 12px; right: 15px; width: auto;
+    border: 0; padding: 0;
+  }
+  .header .container { position: relative; }
+  .main-nav {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 0 18px;
+    width: calc(100% + 30px);
+    max-width: none;
+    margin: 8px -15px 0;
+    padding: 0 15px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.35);
+  }
+  .main-nav::-webkit-scrollbar { display: none; }
+  .main-nav a { white-space: nowrap; padding: 11px 0 9px; font-size: 13px; }
+
+  .hero { padding: 30px 0 28px; }
+  .hero h1 { font-size: 23px; letter-spacing: 1px; }
+  .hero .hero-sub { font-size: 14.5px; margin-top: 10px; }
+
+  main.container { padding-top: 22px; padding-bottom: 40px; }
+  h2 { font-size: 15px; margin-top: 2em; }
+  .card { padding: 14px 16px; }
+  .grid { grid-template-columns: 1fr; }
+
+  /* tables scroll sideways instead of breaking the page width */
+  table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; font-size: 13.5px; }
+  th, td { padding: 8px 10px; }
+  th:first-child, td:first-child { min-width: 120px; }
+
+  .orgchart { align-items: stretch; }
+  .org-row { flex-direction: column; }
+  .org-node { width: 100%; }
+
+  .footer .container { flex-direction: column; gap: 14px; }
 }
