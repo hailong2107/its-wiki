@@ -7,140 +7,117 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="layout">
-  <nav class="sidebar">
-    <div class="brand-block">
-      <div class="brand-mark">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="3" fill="#f58220"/>
-          <g stroke="#f58220" stroke-width="1.6" stroke-linecap="round">
-            <line x1="12" y1="2" x2="12" y2="6"/>
-            <line x1="12" y1="18" x2="12" y2="22"/>
-            <line x1="2" y1="12" x2="6" y2="12"/>
-            <line x1="18" y1="12" x2="22" y2="12"/>
-            <line x1="4.9" y1="4.9" x2="7.8" y2="7.8"/>
-            <line x1="16.2" y1="16.2" x2="19.1" y2="19.1"/>
-            <line x1="4.9" y1="19.1" x2="7.8" y2="16.2"/>
-            <line x1="16.2" y1="7.8" x2="19.1" y2="4.9"/>
-          </g>
-        </svg>
-      </div>
-      <div class="brand-text">
-        <div class="name">ITS Wiki</div>
-        <div class="tagline">Indochina Travel Services</div>
-      </div>
+<header class="header">
+  <div class="container">
+    <a class="logo" href="index.html" aria-label="ITS Wiki"><img src="assets/logo.png" alt="Indochina Travel Services — Vietnam · Laos · Cambodia · Myanmar" /></a>
+    <div class="header-right">
+      <div class="header-top"><a class="badge-btn" href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com ↗</a></div>
+      <nav class="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="departments.html" class="active">Phòng ban</a>
+        <a href="workflows.html">Quy trình</a>
+        <a href="org-chart.html">Sơ đồ tổ chức</a>
+        <a href="ai-its-os.html">AI ITS OS</a>
+        <a href="onboarding.html">Đào tạo</a>
+      </nav>
     </div>
-    <ul>
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="departments.html" class="active">Phòng ban</a></li>
-      <li><a href="workflows.html">Quy trình làm việc</a></li>
-      <li><a href="org-chart.html">Sơ đồ tổ chức</a></li>
-      <li><a href="ai-its-os.html">AI ITS OS</a></li>
-      <li><a href="onboarding.html">Đào tạo nhân viên mới</a></li>
-    </ul>
-    <div class="sidebar-footer">Nguồn: <a href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com</a></div>
-  </nav>
-  <main>
-    <h1>Phòng ban</h1>
-    <p class="lede">Cấu trúc phòng ban và danh sách nhân sự, tổng hợp từ file <em>organisation chart_AUG2026.xls</em> (sheet "funtion list" và "STAFF LIST jan2017").</p>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
+    <h1>Phòng ban &amp; danh bạ nhân sự</h1>
+    <p class="hero-sub">Danh bạ nhân sự ITS Vietnam theo từng bộ phận — cập nhật 09/10/2026 (21 nhân sự, Hà Nội · Đà Nẵng · TP. Hồ Chí Minh · USA).</p>
+  </div>
+</section>
+<main class="container">
 
     <div class="todo">
-      <strong>⚠️ Cần xác nhận</strong>
-      Sheet "STAFF LIST" trong file gốc ghi ngày <strong>tháng 1/2017</strong> — nhân sự có thể đã thay đổi. Số điện thoại cá nhân đã được lược bỏ khỏi trang public này; chỉ giữ lại email công ty (@itsvietnam.com/@iasvietnam.com) và các hotline dùng chung. Vui lòng đối chiếu và cập nhật lại danh sách cho đúng hiện trạng.
+      <strong>ℹ️ Lưu ý khi đọc</strong>
+      Nguồn: <em>Danh bạ ITS Vietnam – Staff Directory (Phương án 2, 09/10/2026)</em>. Vì đây là trang public nên <strong>không đăng số di động cá nhân</strong>; chỉ giữ email công ty và các hotline dùng chung. Cần số liên hệ nội bộ, xem bản danh bạ gốc do quản lý lưu hành.
     </div>
 
-    <h2>Danh sách phòng ban</h2>
+    <h2>Các bộ phận</h2>
     <div class="grid">
-      <div class="card"><strong>Sales Department</strong><br>Kinh doanh / bán buôn (wholesale)</div>
-      <div class="card"><strong>Marketing Department</strong><br>Wholesale &amp; online, gồm ITS HIT‑Online (e‑marketing)</div>
-      <div class="card"><strong>Reservation Department</strong><br>Đặt dịch vụ, gồm ITS Ticketing</div>
-      <div class="card"><strong>Accounting / Admin Department</strong><br>Kế toán &amp; hành chính</div>
-      <div class="card"><strong>Danang Office</strong><br>Văn phòng chi nhánh Đà Nẵng</div>
-      <div class="card"><strong>Saigon Office</strong><br>Văn phòng chi nhánh TP.HCM</div>
+      <div class="card"><strong>Kinh doanh &amp; Marketing</strong><br>Sales, Marketing, hỗ trợ kinh doanh</div>
+      <div class="card"><strong>Vé máy bay (Ticketing)</strong><br>Xuất vé, đổi/hoàn vé</div>
+      <div class="card"><strong>Điều hành (Operations)</strong><br>Đặt dịch vụ, vận hành tour, VP Đà Nẵng &amp; Sài Gòn</div>
+      <div class="card"><strong>Kế toán (Accounting)</strong><br>Thu chi, thanh toán, thủ quỹ</div>
     </div>
 
-    <h2>Cấp bậc chức danh (theo mã trong file gốc)</h2>
+    <h2>Kinh doanh &amp; Marketing</h2>
+    <div class="scroll">
     <table>
-      <tr><th>Mã</th><th>Chức danh</th></tr>
-      <tr><td>BGD</td><td>Board of Director — Ban giám đốc</td></tr>
-      <tr><td>TP</td><td>Manager — Trưởng phòng</td></tr>
-      <tr><td>TN</td><td>Supervisor — Giám sát</td></tr>
-      <tr><td>NV</td><td>Staff — Nhân viên</td></tr>
-      <tr><td>NEW</td><td>New / fresh — Nhân viên mới</td></tr>
+      <tr><th>Họ và tên</th><th>Chức danh</th><th>Văn phòng</th><th>Email</th></tr>
+      <tr><td>Trần Thị Thuỷ</td><td>Giám đốc (Director)</td><td>Hà Nội</td><td>tranthuy@itsvietnam.com</td></tr>
+      <tr><td>Nguyễn Thị Minh Huệ</td><td>Phó Giám đốc (Deputy Director)</td><td>Hà Nội</td><td>production2@itsvietnam.com</td></tr>
+      <tr><td>Nguyễn Hải Long</td><td>Giám đốc Vận hành (COO)</td><td>Hà Nội</td><td>cto@hit-vn.com</td></tr>
+      <tr><td>Nguyễn Đức Trực</td><td>Giám đốc VP Sài Gòn</td><td>Sài Gòn</td><td>dosm@itsvietnam.com</td></tr>
+      <tr><td>Larry Chen</td><td>USO — Executive</td><td>USA</td><td>uso@itsvietnam.com</td></tr>
+      <tr><td>Pham Tran Bao Tram</td><td>Trưởng phòng Marketing</td><td>USA</td><td>production1@itsvietnam.com</td></tr>
+      <tr><td>Nguyễn Đức Việt</td><td>NV Kinh doanh &amp; Hỗ trợ (Sales Support &amp; Admin)</td><td>Hà Nội</td><td>web@itsvietnam.com</td></tr>
+      <tr><td>Nguyen Bao</td><td>Sales Executive</td><td>Sài Gòn</td><td>production4@itsvietnam.com</td></tr>
+      <tr><td>Ngô Hương Trà</td><td>NV Sales / Điều hành</td><td>Hà Nội</td><td>production5@itsvietnam.com</td></tr>
+      <tr><td>Trần Công Hậu</td><td>Nhân viên Sales <span class="tag">thử việc</span></td><td>Sài Gòn</td><td>production3@itsvietnam.com</td></tr>
+    </table>
+    </div>
+
+    <h2>Vé máy bay (Ticketing)</h2>
+    <div class="scroll">
+    <table>
+      <tr><th>Họ và tên</th><th>Chức danh</th><th>Văn phòng</th><th>Email</th></tr>
+      <tr><td>Hà Thị Thu Hương</td><td>Nhân viên Vé máy bay (Ticketing Officer)</td><td>Hà Nội</td><td>ticketing4@iasvietnam.com</td></tr>
+    </table>
+    </div>
+
+    <h2>Điều hành (Operations)</h2>
+    <div class="scroll">
+    <table>
+      <tr><th>Họ và tên</th><th>Chức danh</th><th>Văn phòng</th><th>Email</th></tr>
+      <tr><td>Phạm Thị Thanh Hải</td><td>Nhân viên Điều hành</td><td>Hà Nội</td><td>hanoi@itsvietnam.com</td></tr>
+      <tr><td>Phạm Hoàng Khánh Huyền</td><td>Nhân viên Điều hành</td><td>Hà Nội</td><td>booking2@itsvietnam.com</td></tr>
+      <tr><td>Nguyễn Bá Vương</td><td>NV Điều hành</td><td>Đà Nẵng</td><td>danang@itsvietnam.com</td></tr>
+      <tr><td>Nguyễn Thị Mộng Thúy</td><td>Quản lý VP Sài Gòn</td><td>Sài Gòn</td><td>saigon@itsvietnam.com</td></tr>
+    </table>
+    </div>
+
+    <h2>Kế toán (Accounting)</h2>
+    <div class="scroll">
+    <table>
+      <tr><th>Họ và tên</th><th>Chức danh</th><th>Văn phòng</th><th>Email</th></tr>
+      <tr><td>Trần Thị Nhung</td><td>Trưởng phòng Kế toán</td><td>Hà Nội</td><td>acc1@itsvietnam.com</td></tr>
+      <tr><td>Nguyễn Thị Ngọc Bích Trâm</td><td>Trưởng VP Đà Nẵng</td><td>Đà Nẵng</td><td>danacc@itsvietnam.com</td></tr>
+      <tr><td>Quách Thị Thanh Tình</td><td>Thủ quỹ (Cashier)</td><td>Hà Nội</td><td>acc5@itsvietnam.com</td></tr>
+      <tr><td>Trần Thùy Dương</td><td>Kế toán thanh toán</td><td>Hà Nội</td><td>finance@itsvietnam.com</td></tr>
+      <tr><td>Nguyễn Thị Huế</td><td>Kế toán thanh toán</td><td>Hà Nội</td><td>acc2@itsvietnam.com</td></tr>
+      <tr><td>Lê Thị Mộng Mơ</td><td>Nhân viên Kế toán</td><td>Đà Nẵng</td><td>danacc2@itsvietnam.com</td></tr>
+    </table>
+    </div>
+
+    <h2>Hotline bộ phận (dùng chung)</h2>
+    <table>
+      <tr><th>Hotline</th><th>Số</th></tr>
+      <tr><td>Hotline inbound</td><td>0936 631 705</td></tr>
+      <tr><td>Sales inbound</td><td>0934 698 485</td></tr>
+      <tr><td>HIT</td><td>0932 258 797</td></tr>
+      <tr><td>Điều hành</td><td>0903 580 770</td></tr>
+      <tr><td>Ticketing</td><td>0932 315 788</td></tr>
+      <tr><td>Transit</td><td>0936 494 996</td></tr>
     </table>
 
-    <h2>Board of Directors</h2>
-    <table>
-      <tr><th>Tên</th><th>Chức danh</th><th>Email</th></tr>
-      <tr><td>Trần Thị Thuỷ</td><td>Director</td><td>info@itsvietnam.com</td></tr>
-      <tr><td colspan="3"><em>Vice Director of Commercial, Vice Director of Operation, Chief Financial Officer / Financial Controller — cần cập nhật tên người phụ trách hiện tại.</em></td></tr>
-    </table>
+    <h2>Thông tin công ty</h2>
+    <div class="card">
+      <strong>Công ty TNHH Dịch vụ Du lịch Đông Dương – Chi nhánh Hà Nội</strong><br>
+      P1705, 172 Ngọc Khánh, Giảng Võ, Hà Nội · info@itsvietnam.com
+    </div>
 
-    <h2>Sales Department</h2>
-    <table>
-      <tr><th>Tên</th><th>Chức danh</th><th>Email</th></tr>
-      <tr><td>Đinh Thị Liên</td><td>Supervisor</td><td>production4@itsvietnam.com</td></tr>
-      <tr><td>Nguyễn Thị Bích Hoa</td><td>Staff</td><td>booking@itsvietnam.com</td></tr>
-    </table>
-    <p><em>Sales Manager: "Bao" (theo sơ đồ CHART) — cần xác nhận họ tên đầy đủ.</em></p>
-
-    <h2>Marketing Department (Wholesale &amp; Online)</h2>
-    <p>Bao gồm bộ phận <strong>ITS HIT‑Online</strong> (e‑marketing / online).</p>
-    <table>
-      <tr><th>Tên</th><th>Chức danh</th><th>Email</th></tr>
-      <tr><td>Lê Quỳnh Giang</td><td>Supervisor — ITS HIT‑Online</td><td>—</td></tr>
-      <tr><td>Nguyễn Đức Việt</td><td>Staff — ITS HIT‑Online</td><td>web@itsvietnam.com</td></tr>
-    </table>
-
-    <h2>Reservation Department</h2>
-    <p>Bao gồm bộ phận <strong>ITS Ticketing</strong>.</p>
-    <table>
-      <tr><th>Tên</th><th>Chức danh</th><th>Email</th></tr>
-      <tr><td>Nguyễn Thị Minh Huệ</td><td>Reservation Department Manager</td><td>booking1@itsvietnam.com</td></tr>
-      <tr><td>Phạm Thị Thúy Lê</td><td>Staff</td><td>hit@itsvietnam.com</td></tr>
-      <tr><td>Vũ Thị Kim Cúc</td><td>Staff</td><td>hanoi@itsvietnam.com</td></tr>
-      <tr><td>Nguyễn Tố Tâm</td><td>Staff — ITS Ticketing</td><td>ticketing4@iasvietnam.com</td></tr>
-      <tr><td>Hàn Thị Thúy</td><td>Staff — ITS Ticketing</td><td>ticketing@iasvietnam.com / booking5@itsvietnam.com</td></tr>
-    </table>
-    <p><em>Ticketing Manager: "Hương" (theo sơ đồ CHART) — cần xác nhận họ tên đầy đủ.</em></p>
-
-    <h2>Accounting / Admin Department</h2>
-    <table>
-      <tr><th>Tên</th><th>Chức danh</th><th>Email</th></tr>
-      <tr><td>Bùi Thị Hiếu</td><td>Supervisor</td><td>finance@itsvietnam.com</td></tr>
-      <tr><td>Quách Thị Tình</td><td>Staff</td><td>acc@itsvietnam.com</td></tr>
-      <tr><td>Trần Thị Nhung</td><td>Staff</td><td>acc2@itsvietnam.com</td></tr>
-      <tr><td>Phùng Thị Kim Xuân</td><td>Staff <span class="tag">nghỉ sinh</span></td><td>—</td></tr>
-    </table>
-
-    <h2>Danang Office</h2>
-    <table>
-      <tr><th>Tên</th><th>Chức danh</th><th>Email</th></tr>
-      <tr><td>Lương Thảo Nguyên</td><td>Staff</td><td>danang@itsvietnam.com</td></tr>
-      <tr><td>Nguyễn Ngọc Trâm</td><td>Staff</td><td>accdan@itsvietnam.com</td></tr>
-      <tr><td>Trần Công Chánh</td><td>Staff</td><td>—</td></tr>
-    </table>
-
-    <h2>Saigon Office</h2>
-    <table>
-      <tr><th>Tên</th><th>Chức danh</th><th>Email</th></tr>
-      <tr><td>Hồ Bích Nga</td><td>Office Manager</td><td>nga@itsvietnam.com</td></tr>
-      <tr><td>Nguyễn Thị Mộng Thúy</td><td>Staff</td><td>saigon@itsvietnam.com</td></tr>
-    </table>
-
-    <h2>Hotline / email dùng chung</h2>
-    <table>
-      <tr><th>Kênh</th><th>Liên hệ</th></tr>
-      <tr><td>Hotline inbound (Hà Nội)</td><td>0936631705</td></tr>
-      <tr><td>Hotline Đà Nẵng</td><td>0903580770</td></tr>
-      <tr><td>Hotline Sài Gòn</td><td>0903762340</td></tr>
-      <tr><td>Hotline vé (ticketing)</td><td>0932315788</td></tr>
-      <tr><td>Hotline ITS (Chinese speaking)</td><td>0904912818</td></tr>
-      <tr><td>Email trực lễ / ngày nghỉ</td><td>team@itsvietnam.com</td></tr>
-    </table>
-
-    <footer class="page-footer">Nguồn: organisation chart_AUG2026.xls (sheet "funtion list", "STAFF LIST jan2017"). Số điện thoại cá nhân đã được lược bỏ vì đây là trang public.</footer>
-  </main>
-</div>
+    <footer class="page-footer">Nguồn: Danh bạ ITS Vietnam – Staff Directory (cập nhật 09/10/2026). Số di động cá nhân, hộp thư nội bộ và phân bổ tài khoản công cụ không được đăng công khai.</footer>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div><strong>Indochina Travel Services</strong><br>Vietnam · Laos · Cambodia · Myanmar<br>Trụ sở: Hà Nội · Văn phòng: Đà Nẵng, TP. Hồ Chí Minh</div>
+    <div><strong>ITS Wiki</strong><br>Tài liệu nội bộ cho đội Sales, Điều hành &amp; hỗ trợ<br><a href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com</a></div>
+    <div class="copy">© Indochina Travel Services — Wiki nội bộ. Thông tin cá nhân và dữ liệu giá vốn không được đăng công khai.</div>
+  </div>
+</footer>
 </body>
 </html>

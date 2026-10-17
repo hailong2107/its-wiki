@@ -14,43 +14,29 @@
 </style>
 </head>
 <body>
-<div class="layout">
-  <nav class="sidebar">
-    <div class="brand-block">
-      <div class="brand-mark">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="3" fill="#f58220"/>
-          <g stroke="#f58220" stroke-width="1.6" stroke-linecap="round">
-            <line x1="12" y1="2" x2="12" y2="6"/>
-            <line x1="12" y1="18" x2="12" y2="22"/>
-            <line x1="2" y1="12" x2="6" y2="12"/>
-            <line x1="18" y1="12" x2="22" y2="12"/>
-            <line x1="4.9" y1="4.9" x2="7.8" y2="7.8"/>
-            <line x1="16.2" y1="16.2" x2="19.1" y2="19.1"/>
-            <line x1="4.9" y1="19.1" x2="7.8" y2="16.2"/>
-            <line x1="16.2" y1="7.8" x2="19.1" y2="4.9"/>
-          </g>
-        </svg>
-      </div>
-      <div class="brand-text">
-        <div class="name">ITS Wiki</div>
-        <div class="tagline">Indochina Travel Services</div>
-      </div>
+<header class="header">
+  <div class="container">
+    <a class="logo" href="index.html" aria-label="ITS Wiki"><img src="assets/logo.png" alt="Indochina Travel Services — Vietnam · Laos · Cambodia · Myanmar" /></a>
+    <div class="header-right">
+      <div class="header-top"><a class="badge-btn" href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com ↗</a></div>
+      <nav class="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="departments.html">Phòng ban</a>
+        <a href="workflows.html">Quy trình</a>
+        <a href="org-chart.html">Sơ đồ tổ chức</a>
+        <a href="ai-its-os.html">AI ITS OS</a>
+        <a href="onboarding.html" class="active">Đào tạo</a>
+      </nav>
     </div>
-    <ul>
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="departments.html">Phòng ban</a></li>
-      <li><a href="workflows.html">Quy trình làm việc</a></li>
-      <li><a href="org-chart.html">Sơ đồ tổ chức</a></li>
-      <li><a href="ai-its-os.html">AI ITS OS</a></li>
-      <li><a href="onboarding.html" class="active">Đào tạo nhân viên mới</a></li>
-    </ul>
-    <div class="sidebar-footer">Nguồn: <a href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com</a></div>
-  </nav>
-  <main>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
     <h1>Đào tạo nhân viên mới — Điều hành &amp; Sales</h1>
-    <p class="lede">Tài liệu làm quen cho nhân viên mới khối Sales và Điều hành (OP). Cập nhật theo bản ngày 15/10/2026.</p>
-
+    <p class="hero-sub">Tài liệu làm quen cho nhân viên mới khối Sales và Điều hành (OP). Cập nhật theo bản ngày 15/10/2026.</p>
+  </div>
+</section>
+<main class="container">
     <div class="todo">
       <strong>ℹ️ Phiên bản public</strong>
       Trang này được rút gọn từ tài liệu đào tạo nội bộ: đã lược tên agent/khách cụ thể trong ví dụ và các số liệu nhạy cảm (số dư voucher/top-up, giá vốn, margin). Bản đầy đủ do quản lý/trưởng nhóm cung cấp.
@@ -262,7 +248,14 @@
     </ul>
 
     <footer class="page-footer">Nguồn: Tài liệu đào tạo nhân viên mới ITS Vietnam – Điều hành &amp; Sales (cập nhật 15/10/2026), đã lược thông tin nhạy cảm cho bản public.</footer>
-  </main>
-</div>
+  
+</main>
+<footer class="footer">
+  <div class="container">
+    <div><strong>Indochina Travel Services</strong><br>Vietnam · Laos · Cambodia · Myanmar<br>Trụ sở: Hà Nội · Văn phòng: Đà Nẵng, TP. Hồ Chí Minh</div>
+    <div><strong>ITS Wiki</strong><br>Tài liệu nội bộ cho đội Sales, Điều hành &amp; hỗ trợ<br><a href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com</a></div>
+    <div class="copy">© Indochina Travel Services — Wiki nội bộ. Thông tin cá nhân và dữ liệu giá vốn không được đăng công khai.</div>
+  </div>
+</footer>
 </body>
 </html>

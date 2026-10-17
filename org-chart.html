@@ -7,94 +7,74 @@
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-<div class="layout">
-  <nav class="sidebar">
-    <div class="brand-block">
-      <div class="brand-mark">
-        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="12" cy="12" r="3" fill="#f58220"/>
-          <g stroke="#f58220" stroke-width="1.6" stroke-linecap="round">
-            <line x1="12" y1="2" x2="12" y2="6"/>
-            <line x1="12" y1="18" x2="12" y2="22"/>
-            <line x1="2" y1="12" x2="6" y2="12"/>
-            <line x1="18" y1="12" x2="22" y2="12"/>
-            <line x1="4.9" y1="4.9" x2="7.8" y2="7.8"/>
-            <line x1="16.2" y1="16.2" x2="19.1" y2="19.1"/>
-            <line x1="4.9" y1="19.1" x2="7.8" y2="16.2"/>
-            <line x1="16.2" y1="7.8" x2="19.1" y2="4.9"/>
-          </g>
-        </svg>
-      </div>
-      <div class="brand-text">
-        <div class="name">ITS Wiki</div>
-        <div class="tagline">Indochina Travel Services</div>
-      </div>
+<header class="header">
+  <div class="container">
+    <a class="logo" href="index.html" aria-label="ITS Wiki"><img src="assets/logo.png" alt="Indochina Travel Services — Vietnam · Laos · Cambodia · Myanmar" /></a>
+    <div class="header-right">
+      <div class="header-top"><a class="badge-btn" href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com ↗</a></div>
+      <nav class="main-nav">
+        <a href="index.html">Trang chủ</a>
+        <a href="departments.html">Phòng ban</a>
+        <a href="workflows.html">Quy trình</a>
+        <a href="org-chart.html" class="active">Sơ đồ tổ chức</a>
+        <a href="ai-its-os.html">AI ITS OS</a>
+        <a href="onboarding.html">Đào tạo</a>
+      </nav>
     </div>
-    <ul>
-      <li><a href="index.html">Trang chủ</a></li>
-      <li><a href="departments.html">Phòng ban</a></li>
-      <li><a href="workflows.html">Quy trình làm việc</a></li>
-      <li><a href="org-chart.html" class="active">Sơ đồ tổ chức</a></li>
-      <li><a href="ai-its-os.html">AI ITS OS</a></li>
-      <li><a href="onboarding.html">Đào tạo nhân viên mới</a></li>
-    </ul>
-    <div class="sidebar-footer">Nguồn: <a href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com</a></div>
-  </nav>
-  <main>
+  </div>
+</header>
+<section class="hero">
+  <div class="container">
     <h1>Sơ đồ tổ chức</h1>
-    <p class="lede">Dựng lại từ sheet "CHART" trong file <em>organisation chart_AUG2026.xls</em>. Đây là bản diễn giải lại một sơ đồ ô lồng ghép (merged cells) sang dạng cây phân cấp — vui lòng đối chiếu với bản gốc và chỉnh sửa nếu có sai lệch.</p>
-
+    <p class="hero-sub">Cơ cấu tổ chức ITS Vietnam dựng từ chức danh trong danh bạ nhân sự cập nhật 09/10/2026. Quan hệ báo cáo là diễn giải theo chức danh — cần xác nhận với Ban Giám đốc.</p>
+  </div>
+</section>
+<main class="container">
     <div class="todo">
       <strong>⚠️ Cần xác nhận</strong>
-      Một số vị trí trong file gốc ghi "chưa có" (còn trống) hoặc chỉ có tên gọi (không rõ họ tên đầy đủ). Các vị trí này được giữ nguyên như trong file và cần được xác nhận/điền lại.
+      Sơ đồ dưới đây suy ra từ <strong>chức danh</strong> trong danh bạ, không phải từ quyết định bổ nhiệm chính thức. Các quan hệ báo cáo (ai quản lý ai) cần được Ban Giám đốc xác nhận. Vị trí chưa rõ người phụ trách được ghi là "chưa xác định".
     </div>
 
     <div class="orgchart">
-      <div class="org-node top">Director — Trần Thị Thuỷ</div>
+      <div class="org-node top">Giám đốc — Trần Thị Thuỷ</div>
       <div class="org-row">
-        <div class="org-node">Vice Director of Commercial <em>(chưa có)</em></div>
-        <div class="org-node">Vice Director of Operation</div>
-        <div class="org-node">Chief Financial Officer / Financial Controller</div>
+        <div class="org-node">Phó Giám đốc<br>Nguyễn Thị Minh Huệ</div>
+        <div class="org-node">Giám đốc Vận hành (COO)<br>Nguyễn Hải Long</div>
+        <div class="org-node">Giám đốc VP Sài Gòn<br>Nguyễn Đức Trực</div>
       </div>
       <div class="org-row">
-        <div class="org-node">Reservation Dept. Manager<br>Nguyễn Thị Minh Huệ</div>
-        <div class="org-node">Marketing Dept. Manager</div>
-        <div class="org-node">Accounting‑Admin Dept. Manager<br>Bùi Thị Hiếu (Supervisor)</div>
-        <div class="org-node">Sales Manager<br>"Bao"</div>
-      </div>
-      <div class="org-row">
-        <div class="org-node">Branch Office Manager<br>(Hà Nội)</div>
-        <div class="org-node">Branch Office Manager<br>Đà Nẵng <em>(chưa có)</em></div>
-        <div class="org-node">Office Manager<br>Sài Gòn — Hồ Bích Nga</div>
-        <div class="org-node">Ticketing Manager<br>"Hương"</div>
-      </div>
-      <div class="org-row">
-        <div class="org-node">Sales Executive / Staff</div>
-        <div class="org-node">Accounting Executive / Staff</div>
-        <div class="org-node">HIT (online) Executive / Staff</div>
-        <div class="org-node">Điều hành / Tour Guide / Quality Control</div>
+        <div class="org-node"><strong>Kinh doanh &amp; Marketing</strong><br>Trưởng phòng Marketing: Pham Tran Bao Tram<br>Sales, hỗ trợ kinh doanh, USO</div>
+        <div class="org-node"><strong>Vé máy bay</strong><br>Ticketing Officer</div>
+        <div class="org-node"><strong>Điều hành</strong><br>Hà Nội · Đà Nẵng<br>Quản lý VP Sài Gòn: Nguyễn Thị Mộng Thúy</div>
+        <div class="org-node"><strong>Kế toán</strong><br>Trưởng phòng: Trần Thị Nhung<br>Trưởng VP Đà Nẵng: Nguyễn Thị Ngọc Bích Trâm</div>
       </div>
     </div>
 
-    <h2>Ghi chú vai trò "Điều hành" (Operations)</h2>
-    <ul>
-      <li>Nhân viên điều hành tại VP Đà Nẵng và VP Sài Gòn có thể được điều động kiêm nhiệm vai trò <strong>Tour Guide</strong> khi cần ("CÓ THỂ ĐIỀU ĐỘNG NHƯ TOUR GUIDE").</li>
-      <li>VP Sài Gòn: vai trò Điều hành / Guide / Quality Control kết hợp trên cùng một số nhân sự.</li>
-    </ul>
-
-    <h2>Cấp bậc (theo mã)</h2>
+    <h2>Theo văn phòng</h2>
     <table>
-      <tr><th>Mã</th><th>Chức danh</th></tr>
-      <tr><td>BGD</td><td>Board of Director — Ban giám đốc</td></tr>
-      <tr><td>TP</td><td>Manager — Trưởng phòng</td></tr>
-      <tr><td>TN</td><td>Supervisor / Lead‑Executive — Giám sát</td></tr>
-      <tr><td>NV</td><td>Staff — Nhân viên</td></tr>
+      <tr><th>Văn phòng</th><th>Người phụ trách</th><th>Bộ phận hiện diện</th></tr>
+      <tr><td>Hà Nội (trụ sở)</td><td>Trần Thị Thuỷ (Giám đốc)</td><td>Ban Giám đốc, Kinh doanh, Ticketing, Điều hành, Kế toán</td></tr>
+      <tr><td>Đà Nẵng</td><td>Nguyễn Thị Ngọc Bích Trâm (Trưởng VP)</td><td>Điều hành, Kế toán</td></tr>
+      <tr><td>TP. Hồ Chí Minh</td><td>Nguyễn Đức Trực (Giám đốc VP) · Nguyễn Thị Mộng Thúy (Quản lý VP)</td><td>Sales, Điều hành, Transit</td></tr>
+      <tr><td>USA</td><td>—</td><td>USO, Marketing</td></tr>
     </table>
 
-    <p>Xem chi tiết nhân sự theo từng phòng ban tại trang <a href="departments.html">Phòng ban</a>.</p>
+    <h2>Nhân sự điều hành đa nhiệm</h2>
+    <ul>
+      <li>Hộp thư/bộ phận <strong>Transit</strong> do nhân sự ba văn phòng (Hà Nội, Sài Gòn, Đà Nẵng) cùng theo dõi.</li>
+      <li>Nhân viên điều hành tại VP Đà Nẵng và Sài Gòn có thể được điều động kiêm nhiệm <strong>Tour Guide</strong> khi cần (theo sơ đồ gốc AUG2026).</li>
+    </ul>
 
-    <footer class="page-footer">Nguồn: organisation chart_AUG2026.xls (sheet "CHART").</footer>
-  </main>
-</div>
+    <p>Danh sách chi tiết nhân sự xem tại trang <a href="departments.html">Phòng ban</a>.</p>
+
+    <footer class="page-footer">Nguồn: Danh bạ ITS Vietnam – Staff Directory (09/10/2026) và organisation chart_AUG2026.xls.</footer>
+</main>
+<footer class="footer">
+  <div class="container">
+    <div><strong>Indochina Travel Services</strong><br>Vietnam · Laos · Cambodia · Myanmar<br>Trụ sở: Hà Nội · Văn phòng: Đà Nẵng, TP. Hồ Chí Minh</div>
+    <div><strong>ITS Wiki</strong><br>Tài liệu nội bộ cho đội Sales, Điều hành &amp; hỗ trợ<br><a href="https://itsvietnam.com" target="_blank" rel="noopener">itsvietnam.com</a></div>
+    <div class="copy">© Indochina Travel Services — Wiki nội bộ. Thông tin cá nhân và dữ liệu giá vốn không được đăng công khai.</div>
+  </div>
+</footer>
 </body>
 </html>
